@@ -55,6 +55,12 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :markdown_engine, :kramdown
+set :markdown, :layout_engine => :erb,
+               :tables => true,
+               :autolink => true,
+               :smartypants => true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
