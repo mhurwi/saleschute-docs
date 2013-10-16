@@ -5,17 +5,26 @@ title: Saleschute API Documentation
 API Documentation
 ============================
 
-<div class="container" markdown="1">
-<p><%= link_to "<- back", "index.html" %></p>
+<div class="container">
+  <div class="row">
+
+    <!-- Side Navigation -->
+    <div class="col-md-3">
+      <p><%= link_to "<- back", "index.html" %></p>
+      <p><%= link_to "Orders", "#orders" %></p>
+    </div>
 
 
-This page is docs.html.markdown.erb
+    <!-- Main Content -->
+    <div class="col-md-9 main-content">
+      <div id="orders">
 
-This should be a paragraph.
+        <!-- see partial for actual content. use markdown for easier writing. -->
+        <%= partial "docs-content.markdown" %>
 
-```ruby
-puts "this is code"
-```
 
-We are good to go!
-</div>
+
+      </div>
+    </div>
+  </div> <!-- /row -->
+</div><!-- /container -->

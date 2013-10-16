@@ -54,3 +54,9 @@ h1 {
     -webkit-transform: scale(1);
   }
 }
+
+.main-content h1 {
+  background: none;
+  padding: 20px 0 10px 0;
+  text-align: left;
+}
